@@ -19,7 +19,6 @@ app.use(helmet());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
 // Log requests to the console.
 app.use(morgan(isProd ? 'combined' : 'dev'));
 
