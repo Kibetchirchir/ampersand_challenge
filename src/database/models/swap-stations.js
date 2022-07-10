@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const UserRole = sequelize.define("SwapStation", {
+    const SwapStation = sequelize.define("SwapStation", {
         id: {
             allowNull: false,
             autoIncrement: true,
@@ -25,4 +25,5 @@ module.exports = (sequelize, DataTypes) => {
         createdAt: 'created_at',
         updatedAt: 'updated_at',
     })
+    return SwapStation;
 }
