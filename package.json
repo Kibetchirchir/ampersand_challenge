@@ -14,7 +14,8 @@
     "sequelize": "./node_modules/.bin/babel-node ./node_modules/.bin/sequelize $*",
     "db:create": "sequelize db:create",
     "db:migrate": "sequelize db:migrate",
-    "db:seed": "sequelize db:seed:all"
+    "db:seed": "sequelize db:seed:all",
+    "db:migrate:seed": "yarn db:migrate && yarn db:seed"
   },
   "husky": {
     "hooks": {
