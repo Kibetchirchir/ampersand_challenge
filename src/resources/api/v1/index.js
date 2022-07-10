@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import movedPermanently from '../../../middlewares/movedPermanently';
+import swap from './swaps/swaps.route';
 
 const router = Router();
 
-router.all('/*', movedPermanently);
+router.all('/swap', swap);
 
 export default router;

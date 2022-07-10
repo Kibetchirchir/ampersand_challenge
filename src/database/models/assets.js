@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const Assets = sequelize.define(
+  const Asset = sequelize.define(
     "Assets",
     {
       id: {
@@ -16,6 +16,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.BIGINT
       },
       swap_station_id: {
+        type: DataTypes.BIGINT
+      },
+      current_power: {
         type: DataTypes.BIGINT
       },
       total_dist: {
@@ -44,5 +47,5 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  return Assets;
+  return Asset;
 };

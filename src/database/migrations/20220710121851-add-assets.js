@@ -27,6 +27,9 @@ module.exports = {
       type: Sequelize.BIGINT,
       default: 0.00
     },
+    current_power: {
+      type: Sequelize.BIGINT,
+    },
     created_at: {
       allowNull: false,
       type: Sequelize.DATE
