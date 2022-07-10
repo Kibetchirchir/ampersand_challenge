@@ -33,12 +33,14 @@ module.exports = {
         defaulValue: 'inactive',
         allowNull: false,
       },
-    }, {
-      tableName: 'users',
-      underscored: true,
-      timestamps: true,
-      createdAt: 'created_at',
-      updatedAt: 'updated_at'
+      created_at: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updated_at: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
     })
   },
 
