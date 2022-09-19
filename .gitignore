@@ -67,7 +67,6 @@ package-lock.json
 
 # Yarn
 .yarn-integrity
-yarn.lock
 
 # dotenv environment variables file
 .env
