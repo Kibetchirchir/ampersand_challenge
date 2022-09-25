@@ -2,7 +2,7 @@ const config  = {
   "development": {
     "use_env_variable": "DATABASE_URL_DEV",
     "dialect": "postgres",
-    "logging": true
+    "logging": false
   },
   "test": {
     "use_env_variable": "DATABASE_URL_TEST",
