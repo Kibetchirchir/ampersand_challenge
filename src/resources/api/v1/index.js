@@ -3,6 +3,6 @@ import swap from './swaps/swaps.route';
 
 const router = Router();
 
-router.all('/swap', swap);
+router.use('/swap', swap);
 
 export default router;

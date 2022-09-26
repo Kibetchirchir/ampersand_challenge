@@ -4,6 +4,6 @@ import { swapAsset } from './swaps.controller';
 
 const router = Router();
 
-router.all('/', asyncHandler(swapAsset));
+router.post('/', asyncHandler(swapAsset));
 
 export default router;

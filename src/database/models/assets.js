@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Asset = sequelize.define(
-    "Assets",
+    "Asset",
     {
       id: {
         allowNull: false,
