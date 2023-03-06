@@ -36,7 +36,7 @@ app.get('/', (req, res) => res.json({
   message: 'Welcome to our API',
 }));
 
-app.use((req, res) => {
+app.use('*', (req, res) => {
   const status = NOT_FOUND;
   const message = 'Not Found';
   return res.status(NOT_FOUND)
