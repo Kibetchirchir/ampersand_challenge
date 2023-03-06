@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:5000"
+
+
+  postgis:
+    image: postgis/postgis:12-master
+    environment:
+      POSTGRES_PASSWORD: testingtesting
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5431:5432
+
